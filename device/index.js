@@ -134,7 +134,7 @@ function prepareWebSocketUrl(options, awsAccessId, awsSecretKey, awsSTSToken) {
    var now = getDateTimeString();
    var today = getDateString(now);
    var path = '/mqtt';
-   var awsServiceName = 'iotdata';
+   var awsServiceName = 'iotdevicegateway';
    var queryParams = 'X-Amz-Algorithm=AWS4-HMAC-SHA256' +
       '&X-Amz-Credential=' + awsAccessId + '%2F' + today + '%2F' + options.region + '%2F' + awsServiceName + '%2Faws4_request' +
       '&X-Amz-Date=' + now +
